@@ -2694,7 +2694,7 @@ public:
 
     ToolResult doTool(EditingTool tool, short tileX, short tileY);
 
-    void toolDown(EditingTool tool, short tileX, short tileY);
+    ToolResult toolDown(EditingTool tool, short tileX, short tileY);
 
     void toolDrag(EditingTool tool, short fromX, short fromY,
                                     short toX, short toY);
