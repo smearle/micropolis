@@ -5,7 +5,7 @@ This fork makes a few small modifications to MicropolisCore, making the engine a
 ## TODO: ##
 
 * Might it be faster to access the simulation's map/tile-array directly for agent observation, rather than leaving agents to maintain an internal representation given the success/fail of their own actions? If not, then we should:
- - have toolDown() method cause bot to update its internal representations, when toolDown() has been caused by something other than the bot itself
+    - have toolDown() method cause bot to update its internal representations, when toolDown() has been caused by something other than the bot itself
 * Make available any other potentially interesting simulation variables for bots
 * Make pre-trained city-building bots available in-game, as player assistants/advisors
 
