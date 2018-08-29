@@ -1,6 +1,6 @@
 # micropolis-4bots #
 
-This fork makes a few small modifications to MicropolisCore, making the engine available for stepping through the simulation with or without drawing the gtk window, and removing the handleDidTool() printout which would otherwise clutter the terminal during training. It is intended for use with the [micropolis gym environment](https://github.com/smearle/gym-micropolis). Note that only the MicropolisCore module oought to be installed to these ends, the resto of the repo, including old micropolis-activity, is included only for posterity, entirely unchanged.
+This fork makes a few small modifications to MicropolisCore, making the engine available to python for stepping through the simulation with or without drawing the gtk window, and removing the handleDidTool() printout which would otherwise clutter the terminal during training. It is intended for use with the [micropolis gym environment](https://github.com/smearle/gym-micropolis). Note that only the MicropolisCore module oought to be installed to these ends, the resto of the repo, including old micropolis-activity, is included only for posterity, entirely unchanged.
 
 ## TODO: ##
 
