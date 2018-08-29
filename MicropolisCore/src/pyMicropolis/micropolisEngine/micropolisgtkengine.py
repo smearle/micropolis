@@ -492,7 +492,7 @@ You have 10 years to turn this swamp back into a city again.""",
 
     def __init__(self, *args, **kw):
 
-        micropolisgenericengine.MicropolisGenericEngine.__init__(self, *args, **kw)
+        self.generic_engine = micropolisgenericengine.MicropolisGenericEngine.__init__(self, *args, **kw)
 
         # This must be called at the end of the concrete subclass's
         # init, so it happens last.
