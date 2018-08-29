@@ -1484,7 +1484,7 @@ ToolResult Micropolis::doTool(EditingTool tool, short tileX, short tileY)
 }
 
 
-void Micropolis::toolDown(EditingTool tool, short tileX, short tileY)
+ToolResult Micropolis::toolDown(EditingTool tool, short tileX, short tileY)
 {
     ToolResult result = doTool(tool, tileX, tileY);
 
@@ -1503,6 +1503,9 @@ void Micropolis::toolDown(EditingTool tool, short tileX, short tileY)
 
     simPass = 0;
     invalidateMaps();
+// for bots storing an externam representation of the game map 
+// (until i figure out how to reference c arrays directly from python)
+    return result;
 }
 
 /**
