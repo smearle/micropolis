@@ -1,3 +1,14 @@
+# micropolis-4bots #
+
+This fork makes a few small modifications to MicropolisCore, making the engine available for stepping through the simulation with or without drawing the gtk window, and removing the handleDidTool() printout which would otherwise clutter the terminal during training. It is intended for use with the [micropolis gym environment](https://github.com/smearle/gym-micropolis).
+
+## TODO: ##
+
+* Might it be faster to access the simulation's map/tile-array directly for agent observation, rather than leaving agents to maintain an internal representation given the success/fail of their own actions? If not, then we should:
+ - have toolDown() method cause bot to update its internal representations, when toolDown() has been caused by something other than the bot itself
+* Make available any other potentially interesting simulation variables for bots
+* Make pre-trained city-building bots available in-game, as player assistants/advisors
+
 # Open Source Micropolis, based on the original SimCity Classic from Maxis, by Will Wright. #
 
 This is the source code for Micropolis (based on [SimCity](http://en.wikipedia.org/wiki/SimCity_(1989_video_game))), released under the GPL. Micropolis is based on the original SimCity from Electronic Arts / Maxis, and designed and written by Will Wright.
